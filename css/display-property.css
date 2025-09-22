@@ -1,0 +1,33 @@
+/* you can change how an element is displayed using 'display', changing inline to block and block to inline */
+/* More helpful, you can use 'inline-block' so they have features of both */
+
+.container {
+    /* width: 800px; */
+    font-size: 0;
+}
+
+div {
+    background: lightgreen;
+    height: 100px;
+    width: 200px;
+    display: inline-block; /* will allow them to have the height and width properties while still being displayed on the same line*/
+    /* margin: -4px; */
+    font-size: 16px;
+}
+
+span {
+    background: lightblue;
+    height: 100px;
+    width: 200px;
+    display: inline-block; /* will allow them to have the height and width properties while still being displayed on the same line*/
+    /* margin: -4px; */
+    font-size: 16px;
+}
+
+/* Despite having no margin, there is still space between them because of the line breaks in the HTML */
+/* You can get rid of the spaces by putting all of the elements next to each other without spaces */
+/* You can also get rid of the spaces by adding margin with a negative value */
+/* Padding doesn't accept negative values */
+/* You could also get rid of the spaces by adding a font size of 0 to the container as it not only effects the 
+size of number and letters but also to space characters. However, font-size is an inheritable style, so you will
+have to redeclare your font fize in the div and span tags */
