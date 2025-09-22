@@ -1,0 +1,21 @@
+/* When two margins are adjascent they occupy the same space, otherwise known as margin collapse */
+/* When padding is added to inline elements, they will only be repositioned horizontally */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    background: lightgreen;
+    width: 50%;
+    margin: 30px;
+    padding: 10px;
+}
+
+a {
+    background: lightblue;
+    width: 50%; /*inline elements ignore width and height properties so nothing changes*/
+    margin: 30px;
+    padding: 20px;
+}
