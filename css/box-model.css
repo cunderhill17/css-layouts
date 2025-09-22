@@ -19,3 +19,26 @@ a {
     margin: 30px;
     padding: 20px;
 }
+
+/* Border Box Fit */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.box {
+    background: lightblue;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border: 20px solid black;
+    margin: 40px auto;
+}
+
+/* box-sizing: border-box includes the value of padding within the size of the element. The height and width won't change if you add padding */
+/* in order to use margin: auto, a width must be set */
+
+
